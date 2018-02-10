@@ -25,7 +25,7 @@ public class WelcomeController {
     @RequestMapping(value="/")
     public String index(Model model){
         model.addAttribute("msg", "");
-        return "index";
+        return "main";
     }
 
     @RequestMapping(value="/high/error")
@@ -58,12 +58,16 @@ public class WelcomeController {
         }
     }
 
-
     @RequestMapping(value = "/taglib")
     public String taglib(Model model) throws Exception {
         model.addAttribute("notNullValue", "Null이 아니에요");
         model.addAttribute("nullValue", null);
         model.addAttribute("taglib", new TagLibrary());
         return "taglib";
+    }
+
+    @RequestMapping(value="/enterPage.do")
+    public String enter() {
+        return "login";
     }
 }
