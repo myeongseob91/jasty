@@ -68,6 +68,11 @@ public class WelcomeController {
 
     @RequestMapping(value="/enterPage.do")
     public String enter() {
-        return "login";
+        return "temT";
+    }
+
+    @RequestMapping(value="/loginForm.do")
+    public String temT() {
+        return "loginForm";
     }
 }
