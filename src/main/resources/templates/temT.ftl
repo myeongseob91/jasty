@@ -22,10 +22,15 @@
                             </div>
                         </div>
                     </div>
-                    <img src="/image/jenny.jpg">
+                    <img src="/image/image.png">
                 </div>
                 <div class="content">
                     <a class="header">Lee Hyeong Yeong</a>
+                    <form action="/imageFile" id="fileUpload" name="fileUpload" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file">
+                        <input type="submit" ></input>
+                    </form>
+
                     <div class="meta">
                         <span class="date">strange woman</span>
                     </div>

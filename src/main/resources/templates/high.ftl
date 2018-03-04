@@ -5,6 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
     <meta charset="UTF-8">
     <title>Freemarker Guide</title>
+
 </head>
 
 <div class="ui borderless fixed blue inverted pointing menu">
