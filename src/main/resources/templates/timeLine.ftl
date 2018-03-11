@@ -4,7 +4,7 @@
 <body class="template">
 
 <div class="row">
-<#include "/high.ftl">
+<#include "/common/high.ftl">
 </div>
 
 <div class="ui grid container">
@@ -25,7 +25,7 @@
                     <img src="/image/image.png">
                 </div>
                 <div class="content">
-                    <a class="header">Lee Hyeong Yeong</a>
+                    <a class="header">Lee Hyun Young</a>
                     <form action="/imageFile" id="fileUpload" name="fileUpload" method="post" enctype="multipart/form-data">
                         <input type="file" name="file">
                         <input type="submit" ></input>
@@ -194,7 +194,7 @@
 </div>
 
 <div class="row">
-<#include "/low.ftl">
+<#include "/common/low.ftl">
 </div>
 
 

@@ -15,7 +15,20 @@
         <a class="item" href="#">Press</a><a class="item" href="#">New hires</a>
         <a class="item" href="#">About</a>
     </div>
-    <a class="item" href="#">로그인</a>
-    <a class="item" href="#">회원가입</a>
+    <div class="ui input">
+        <div class="ui big label">
+            ID
+        </div>
+        <input type="text" >
+    </div>
+    <div class="ui input">
+        <div class="ui big label">
+            PW
+        </div>
+        <input type="text" >
+    </div>
+    <button class="ui button">
+        Login
+    </button>
 
 </div>

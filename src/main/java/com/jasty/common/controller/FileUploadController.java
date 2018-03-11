@@ -1,15 +1,12 @@
-package com.jasty.web;
+package com.jasty.common.controller;
 
 import com.jasty.util.FileUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -42,6 +39,6 @@ public class FileUploadController {
         }
 
 
-        return "main";
+        return "timeLine";
     }
 }

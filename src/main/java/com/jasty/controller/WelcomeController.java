@@ -1,18 +1,13 @@
-package com.jasty.web;
+package com.jasty.controller;
 
 import org.springframework.stereotype.Controller;
 import freemarker.template.Configuration;
-import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
-import freemarker.template.TemplateException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -25,7 +20,7 @@ public class WelcomeController {
     @RequestMapping(value="/")
     public String index(Model model){
         model.addAttribute("msg", "");
-        return "main";
+        return "join";
     }
 
     @RequestMapping(value="/high/error")
@@ -58,17 +53,9 @@ public class WelcomeController {
         }
     }
 
-    @RequestMapping(value = "/taglib")
-    public String taglib(Model model) throws Exception {
-        model.addAttribute("notNullValue", "Null이 아니에요");
-        model.addAttribute("nullValue", null);
-        model.addAttribute("taglib", new TagLibrary());
-        return "taglib";
-    }
-
     @RequestMapping(value="/enterPage.do")
     public String enter() {
-        return "temT";
+        return "timeLine";
     }
 
     @RequestMapping(value="/loginForm.do")
