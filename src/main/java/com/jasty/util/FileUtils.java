@@ -13,10 +13,14 @@ import java.util.*;
  */
 @Component("fileUtils")
 public class FileUtils {
-    String filePath = "C:\\Users\\Administrator\\IdeaProjects\\jasty\\src\\main\\resources\\static\\uploadFiles";
+    //상대경로로 바꿔야함
+    String filePath = "D:\\sqldeveloper\\intelij_sns\\jasty\\src\\main\\resources\\static\\uploadFiles\\";
+    //String filePath = "C:\\Users\\Administrator\\IdeaProjects\\jasty\\src\\main\\resources\\static\\uploadFiles\\";
 
     public List<Map<String,Object>> parseInsertFileInfo(Map<String,Object> map, MultipartHttpServletRequest request) throws Exception{
         MultipartHttpServletRequest multipartHttpServletRequest = request;
+        /*Iterator : 어떤 데이터들의 집합체에서 컬렉션으로부터 정보를 얻어올 수 있는 인터페이스
+                     Map에 있는 데이터를 while문을 이용해 순차적으로 접근하기 위해 사용*/
         Iterator<String> iterator = multipartHttpServletRequest.getFileNames();
 
         MultipartFile multipartFile = null;
